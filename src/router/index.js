@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import apiList from "../views/apiList"
+
+Vue.use(VueRouter)
 const routes = [
     {
         path: '/',
@@ -22,7 +23,7 @@ const routes = [
     },
 ]
 
-const router = new Router({
+const router = new VueRouter({
     routes
 });
 
